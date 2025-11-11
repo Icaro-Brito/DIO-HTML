@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+</head>
+
+<body>
+    <h1 id="inicio">Jornada HTML!</h1>
+
+    <hr>
+
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#Como surgiu">Como Surgiu a internet</a></li>
+        <li><a href="#O que é?">O que é o HTML?</a></li>
+        <li><a href="#Tags">O que são tags?</a></li>
+        <li><a href="#Atributos">Atributos das tags</a></li>
+        <li><a href="#Textos">Textos</a></li>
+        <li><a href="#Listas">O que são listas ordenadas, não ordenadas e para que servem?</a></li>
+        <li><a href="#Links">Links</a></li>
+        <li><a href="#Referêcias">Referências</a></li>
+
+    </ul>
+
+    <h2 id="Como surgiu">Como surgiu a internet</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        A internet atualmente se resume a comunicação, desde uma simples mensagem de texto, até grandes transações
+        bancarias, transferencias de dados, fluxo de sistemas, tudo isso são comunicações que partem de um ponto A até
+        um ponto B, porém isso não começou recentemente, ainda na decada de 40 durante a segunda guerra mundial surgiu o
+        primeiro computador eletrônico de uso geral da história o <strong><i>ENIAC</i></strong>, responsável por cuidar
+        de cálculos matemáticos, que fazia o trabalho de desvedar codigos que um matematico ou engenheiro levariam
+        horas, ou até mesmo dias para resolver em poucos minutos, o que foi imprescindivel durante a guerra, mediante
+        isso, nos anos 50 durante a guerra fria houve um grande <strong>boom</strong> nas tecnologias, principalmente
+        pela tensão vivida entre os Estados Unidos e a antiga União Sovietica, sempre em disputas sobre quem seria o
+        primeiro a conseguir levar o homem a lua, causando uma verdadeira corrida tecnológica para saber os passos que
+        cada país daria forçando cientistas, engenheiros e matematicos a pensar em ideias e soluções que mostrassem ao
+        mundo qual país estava literalmente no topo do mundo, entre esses profissionais surgiu um cientista em especial
+        <strong>Joseph Carl Robnett Licklider</strong> responsável por teorizar sobre a rede mundial de comunicação, que
+        atraves dos anos foi evoluindo até chegar nos anos 60 e surgir a Arpanet um projeto que visava interligar
+        instituições de pesquisa e agencias governamentais para compartilhamento de recursos, ainda no final da mesma
+        decada, no dia 29 de outubro de 1969 , a Arpanet foi responsável pelo surgimento da primeira conexão entre 2
+        pontos distintos a <strong>UCLA (universidade da California)</strong> e o <strong>SRI (Instituto de pesquisa de
+            Stanford)</strong>, nessa conexão foi enviada uma mensagem da UCLA para o SRI algo básico, a palavra
+        <strong><i>Login</i></strong> surgindo assim a primeira conexão de dados entre 2 pontos da história da
+        humanidade, porém também nesse mesmo dia ouve a primeira queda de conexão, pois da mensagem enviada ao
+        instituto, apenas as letras <i>"LO"</i> conseguiram chegar ao destino final. Com o passar dos anos a Arpanet foi
+        crescendo e expandido ao redor dos Estados Unidos, e com a medida da expansão ouve o surgimento TCP/IP que é um
+        cojunto de protocolos de comunicação, permitindo a comunicação de computadores em redes de forma mais robusta,
+        porém ainda era algo muito limitado, restrito apenas a centros militares e de pesquisa, imaginando manter um
+        protocolo padrão junto a uma expansão de maneira mais popular e abrangente ao público <strong>Tim
+            Berners-Lee</strong> criou o <strong>"www"</strong> pensando em unir o hipertexto com o protocolo TCP/IP,
+        criando o primeiro navegador WorldWideWeb utilizando o HTML.
+
+    </p>
+
+
+
+    <h2 id="O que é?">O que é o HTML?</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        <strong>HTML (HyperText Markup Language)</strong>, ou Linguagem de Marcação de Hipertexto, é a linguagem
+        fundamental usada para estruturar o conteúdo de uma página web. Ele utiliza 'tags' para definir elementos como
+        títulos, parágrafos, imagens e links, sendo o esqueleto de todo site na internet.
+
+    </p>
+
+
+
+    <h2 id="Tags">O que são tags?</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        Tags são os comandos básicos do HTML, representados por palavras entre colchetes angulares. Elas são usadas para
+        "marcar" e envolver o conteúdo, dando significado e
+        instruindo o navegador sobre como exibir e estruturar cada elemento da página.
+
+    </p>
+
+
+    <ol>
+
+        <li><strong>Tags de Cabeçalho (H1 a H6)</strong></li>
+
+        <p>
+
+            As tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> definem os <b>títulos e subtítulos</b> do seu
+            conteúdo,
+            estabelecendo uma hierarquia de importância. O <code>&lt;h1&gt;</code> é o título principal da página, e
+            os números seguintes (h2, h3...) representam seções e subseções com importância decrescente. Elas são
+            vitais para a organização do conteúdo e para o SEO (busca do Google).</p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para um título principal e um subtítulo, você codaria assim:
+
+            <code>&lt;h1&gt;Título Principal do Artigo&lt;/h1&gt;</code> =
+
+        <h1>Título Principal do Artigo</h1> e
+
+        <code>&lt;h2&gt;Subtítulo da Primeira Seção&lt;/h2</code> =
+
+        <h2>Subtítulo da Primeira Seção</h2>
+
+        </p>
+
+
+
+        <li><strong>Parágrafo (<code>&lt;p&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;p&gt;</code> é a mais básica e usada para delimitar um <b>parágrafo de texto</b>. Ela
+            garante que um bloco de texto seja visualmente separado dos blocos vizinhos, como este parágrafo que
+            você está lendo agora. É a espinha dorsal de qualquer conteúdo textual.
+
+        </p>
+
+        <p>
+
+            <strong>Exemplo Prático:</strong> Para um parágrafo no seu artigo, a estrutura é simplesmente:
+            <code>&lt;p&gt;Este é um bloco de texto completo, contendo várias frases que formam uma ideia.&lt;/p&gt;</code>
+
+            =
+
+        <p>Este é um bloco de texto completo, contendo várias frases que formam uma ideia</p>
+
+        </p>
+
+
+
+        <li><strong>Marcação/Destaque (<code>&lt;mark&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;mark&gt;</code> é usada para <b>destacar ou marcar</b> destacar ou marcar uma parte do
+            texto, geralmente com uma cor de fundo amarela, como se você tivesse passado um marca-texto ali. É ideal
+            para chamar a atenção do leitor para uma palavra ou frase importante
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para destacar um termo chave:
+
+            <code>Você deve lembrar que a codificação é &lt;mark&gt;sempre&lt;/mark&gt; crucial.</code> =
+
+        <p>Você deve lembrar que a codificação é <mark>sempre</mark> crucial.</p>
+
+        </p>
+
+
+
+        <li><strong>Texto Pequeno (<code>&lt;small&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;small&gt;</code> é usada para representar <b>comentários secundários</b>, como direitos
+            autorais, avisos legais ou letras miúdas. Seu texto aparece visualmente menor do que o texto padrão.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para um aviso no rodapé:
+
+            <code>Todos os direitos reservados. &lt;small&gt;O uso não autorizado é proibido.&lt;/small&gt;</code> =
+
+        <p>Todos os direitos reservados. <small>O uso não autorizado é proibido.</small></p>
+
+        </p>
+
+
+
+        <li><strong> Itálico(<code>&lt;i&gt;</code>)</strong> </li>
+
+        <p>
+
+            A tag <code>&lt;i&gt;</code> representa texto que deve ser renderizado em <b>itálico</b>. Historicamente,
+            era usada para itálico genérico, mas hoje é melhor usá-la para termos técnicos, frases em outro idioma,
+            nomes científicos ou quando o texto precisa de um tom diferente do resto (como um pensamento).
+
+        </p>
+
+        <p>
+
+            <strong>Exemplo Prático:</strong> Para uma palavra em latim:
+
+            <code>A lei do &lt;i&gt;habeas corpus&lt;/i&gt; protege o cidadão.</code> =
+
+        <p>A lei do <i>habeas corpus</i> protege o cidadão.</p>
+
+        </p>
+
+
+
+        <li><strong>Sublinhado (<code>&lt;u&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;u&gt;</code> <b>sublinha</b> o texto. Ela deve ser usada com cuidado, pois um texto
+            sublinhado pode ser confundido com um link. Hoje, é mais usada para indicar texto com uma anotação não
+            textual, como erros ortográficos.
+
+        </p>
+
+        <p>
+
+            <strong>Exemplo Prático:</strong> Para indicar um erro:
+
+            <code>O dia correto da reunião é terça, não &lt;u&gt;terça-feira&lt;/u&gt;.</code> =
+
+        <p>O dia correto da reunião é terça, não <u>terça-feira</u>.</p>
+
+        </p>
+
+
+
+        <li><strong>Ênfase forte (<code>&lt;strong&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;strong&gt;</code> é usada para dar <b>ênfase forte e importância</b> a um trecho de
+            texto. Geralmente, o navegador a exibe em <strong>negrito</strong>. É muito importante para o SEO, pois diz
+            aos motores de busca quais são os termos cruciais da sua página.
+
+        </p>
+
+        <p>
+
+            <strong>Exemplo Prático:</strong> Para dar ênfase a uma palavra:
+
+            <code>Lembre-se: &lt;strong&gt;Nunca&lt;/strong&gt; compartilhe sua senha.</code> =
+
+        <p>Lembre-se: <strong>Nunca</strong> compartilhe sua senha.</p>
+
+        </p>
+
+
+
+        <li><strong>Fonte (<code>&lt;font&gt;</code>)</strong></li>
+
+
+        <p>
+
+            A tag <code>&lt;font&gt;</code> é uma tag <b>OBSOLETA</b> (ultrapassada) e <i>não deve mais ser
+                usada</i> em novos códigos. Ela era usada para mudar a cor, o tamanho e o tipo da fonte diretamente no
+            HTML, mas hoje todo o estilo (design) deve ser feito usando <strong>CSS</strong> (Cascading Style Sheets).
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático (e um aviso!):</strong> Embora o código fosse
+            <code>&lt;font color="blue"&gt;Texto Azul&lt;/font&gt;</code>, você deve <b>evitar</b> usá-la. Use CSS para
+            estilizar! =
+
+        <p>
+            <font color="blue">Texto Azul</font>
+        </p>
+
+        </p>
+
+
+
+        <li><strong>Deletar (<code>&lt;del&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;del&gt;</code> marca um trecho de texto que foi <b>deletado</b> ou removido do documento,
+            mas que ainda precisa ser exibido. O navegador geralmente a exibe com uma linha <i>riscada</i> sobre o
+            texto (tachado). É útil para mostrar revisões de documentos ou mudanças de preço.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para mostrar uma mudança de preço:
+
+            <code>Preço: &lt;del&gt;R$ 50,00&lt;/del&gt; R$ 30,00.</code> =
+
+        <p>Preço: <del>R$ 50,00</del> R$ 30,00.</p>
+
+        </p>
+
+
+
+        <li><strong>Âncora/Link (<code>&lt;a&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;a&gt;</code>, ou âncora, é a que **transforma o texto em um link clicável**. Ela por si
+            só não funciona sem seu atributo essencial (o <code>href</code>) e é o que conecta as páginas da web,
+            tornando a navegação possível.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> A tag usada em conjunto com o destino:
+
+            <code>&lt;a href="destino.html"&gt;Clique Aqui&lt;/a&gt;</code>
+
+        </p>
+
+
+        <li><strong>Atributo de referência de Hyperlink (<code>href</code>)</strong></li>
+
+        <p>
+
+            O <code>href</code> não é uma tag, mas sim o <b>atributo essencial</b> da tag <code>&lt;a&gt;</code>. Ele
+            significa <i>Hypertext REFerence</i> (Referência de Hipertexto) e é onde você define o
+            <strong>destino</strong> do link.
+
+            Ele pode ser um URL completo (absoluto) ou um nome de arquivo (relativo).
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> O destino é sempre colocado dentro da tag de abertura:
+
+            <code>&lt;a &lt;strong&gt;href="https://google.com"&lt;/strong&gt;&gt;Ir para o Google&lt;/a&gt;</code>.
+
+        </p>
+
+
+        <li><strong>Linha horizontal (<code>&lt;hr&gt;</code>) </strong></li>
+
+        <p>
+
+            A tag <code>&lt;hr&gt;</code> (de <i>Horizontal Rule/i>) insere uma <b>linha horizontal</b> para separar
+                visualmente seções de conteúdo. É usada para quebras temáticas, indicando que o próximo conteúdo está
+                relacionado a um tópico diferente do anterior.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para quebrar um tema:
+
+            <code>Texto da Seção 1. &lt;hr&gt; Texto da Seção 2.</code>.
+
+        </p>.
+
+
+
+        <li><strong>Subscrito (<code>&lt;sub&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;sub&gt;</code> define texto em <b>subscrito</b>, ou seja, ele aparece ligeiramente abaixo da
+            linha normal do texto e com um tamanho menor. É mais comum em fórmulas científicas ou matemáticas.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para a fórmula da água:
+
+            <code>A água é H&lt;sub&gt;2&lt;/sub&gt;O.</code> =
+
+        <p>A água é H<sub>2</sub>O.</p>
+
+        </p>
+
+
+
+        <li><strong>Sobrescrito (<code>&lt;sup&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;sup&gt;</code> define texto em <b>sobrescrito</b>, ou seja, ele aparece ligeiramente acima
+            da linha normal do texto e com um tamanho menor. É usado para expoentes matemáticos ou indicadores de
+            ordem (como 1º, 2ª).
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para um número elevado:
+
+            <code>O resultado é 10&lt;sup&gt;2&lt;/sup&gt;</code> =
+
+        <p>O resultado é 10<sup>2</sup> (que é igual a 100).</p>.
+
+        </p>
+
+
+
+        <li><strong>Citação de Bloco (<code>&lt;blockquote&gt;</code>)</strong></li>
+
+        <p>
+
+        <p>
+
+            A tag <code>&lt;blockquote&gt;</code> é usada para citar um <b>bloco de texto longo</b> de outra fonte. Ela
+            é semântica, ou seja, diz ao navegador que aquele trecho é uma citação. Geralmente, os navegadores a
+            renderizam com recuos nas margens para destacá-la.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para citar um livro:
+
+            <code>&lt;blockquote&gt;O mundo é um livro e quem não viaja lê apenas uma página.&lt;/blockquote&gt;</code>
+            =
+
+        <p>
+        <blockquote>O mundo é um livro e quem não viaja lê apenas uma página.</blockquote>
+        </p>
+
+        </p>
+
+
+
+        <li><strong>Abreviação (<code>&lt;abbr&gt;</code>)</strong></li>
+
+        <p>
+
+            A tag <code>&lt;abbr&gt;</code> é usada para marcar *abreviações e acrônimos* (como HTML, ONU, CSS). O
+            atributo opcional <code>title</code> é importantíssimo, pois ele exibe o significado completo quando o
+            usuário passa o mouse sobre a abreviação.
+
+        </p>
+
+        <p>
+            <strong>Exemplo Prático:</strong> Para o significado da web:
+
+            <code>&lt;abbr title="World Wide Web"&gt;WWW&lt;/abbr&gt; é a rede global de documentos.</code>.
+
+        <p><abbr title="World Wide Web">WWW</abbr> é a rede global de documentos.</p>.
+
+        </p>
+
+
+
+    </ol>
+
+
+
+    <h2 id="Atributos">Atributos das tag</h2>
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        Os <strong>atributos</strong> são os segredos que dão superpoderes a essas tags! Pense neles como
+        <i>modificadores</i> que ficam dentro da tag de abertura, sempre no formato <i>nome="valor"</i>. Eles servem
+        para dar informações extras sobre o elemento, como dizer para o link <i>qual página abrir</i> (usando o
+        atributo <code>href</code>) ou para a imagem <i>onde encontrar o arquivo</i> (usando o <code>src</code>).
+        Basicamente, é o que torna o HTML <b>funcional</b> e permite que a gente personalize tudo, de estilos (com o
+        <code>class</code> ou <code>style</code>) até o comportamento de um formulário. Sem eles, nossas tags seriam
+        só esqueleto!
+
+    </p>
+
+
+
+    <h2 id="Textos">Textos</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        O <strong>texto em HTML</strong> é, literalmente, o conteúdo que aparece na sua página web: as frases, os
+        parágrafos, as listas e os títulos que vizializados em cada site! A função do HTML é justamente
+        <i>estruturar</i> esse texto, dizendo ao navegador (como Chrome ou Firefox) o que cada parte representa.
+        Usamos tags como <code>p</code> para parágrafos, <code>h</code> para títulos principais e <code>ul</code> e
+        <code>li</code> para listas. Em resumo, tudo o que não é tag ou código de programação e que você quer que o
+        usuário leia é considerado texto, e o HTML é o mapa que organiza essa leitura.
+
+    </p>
+
+
+
+    <h2 id="Listas">O que são listas ordenadas, não ordenadas e para que servem?</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        As <strong>listas</strong> são essenciais para organizar qualquer informação na web. No HTML, temos dois tipos
+        principais: a <b>Não Ordenada</b> (tag <code>ul</code>, de Unordered List) e a <i>Ordenada</i>
+        (tag<code>ol</code>, de Ordered List). A <b>Não Ordenada</b> é usada quando a ordem dos itens <i>não
+            importa</i>, como uma lista de compras ou um menu de navegação; por padrão, ela usa marcadores (bolinhas).
+        Já a <b>Ordenada<b> é perfeita para quando a ordem é <i>fundamental</i>, como um passo a passo, uma receita ou
+                um ranking, pois ela numera automaticamente os itens. Nos dois casos, cada item individual da lista é
+                definido pela tag <code>li</code> (de List Item). Elas servem para dar clareza e hierarquia ao texto!
+
+    </p>
+
+
+
+    <h2 id="Links">Links</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>
+
+        Se as tags são os tijolos da web, os <strong>links</strong> são o que transforma essa construção em uma
+        verdadeira rede! Eles são a mágica por trás de tudo o que chamamos de "navegação". Usamos a tag
+        <code>a</code> (de <b><i>anchor</i></b> ou âncora) para criar um link e o atributo essencial é o
+        <code>href</code>. É dentro desse <code>href</code> que colocamos o <i>endereço</i> (a URL) para onde levar
+        o usuário, seja para outra página do próprio site, para um site externo, ou até mesmo para uma seção
+        específica na mesma página. Em resumo, o link é um atalho clicável que conecta um documento a outro, fazendo
+        a informação fluir e transformando documentos soltos em uma <b>World Wide Web</b> (Grande Rede Mundial).
+
+    </p>
+
+
+    <hr>
+
+
+    <h2 id="Referêcias">Referências</h2>
+
+    <small><a href="#inicio">Voltar</a></small>
+
+    <p>Para quem está começando e quer aprofundar os estudos em HTML e CSS, estes canais são ótimos pontos de partida:
+    </p>
+
+    <ul>
+
+        <li>
+            <strong>Conheça todas as tags HTML - Curso de HTML e CSS - aula </strong> (Canal: Otávio Miranda)<br>
+            <a href="https://youtu.be/GVVfzrycJ1M?si=ShS2CIWUUY2U_XNC" target="_blank">Clique para assistir ao vídeo</a>
+        </li>
+
+
+        <li>
+            <strong>Curso completo de HTML - seu PRIMEIRO SITE DO ZERO para iniciar em PROGRAMAÇÃO!</strong>
+            (Canal: Rafaella Ballerini)<br>
+            <a href="https://youtu.be/Fhy-5CtVkiM?si=uTpjXaMyAS8-pbEa" target="_blank">Clique para assistir ao vídeo</a>
+        </li>
+
+
+        <li>
+            <strong>Guia de Aprendizado: O Básico do HTML</strong> (Fonte: MDN Web Docs - Mozilla)<br>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+                target="_blank">Acessar Introdução e Guia de HTML</a>
+        </li>
+
+        <li>
+            <strong>Referência Completa de Tags HTML (A-Z)</strong> (Fonte: W3Schools Brasil)<br>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">Consultar Referência de Elementos
+                HTML</a>
+        </li>
+
+        <li>
+            <strong>Artigo Detalhado: Criando Hiperlinks (Tag &#x3C;a&#x3E; e URLs)</strong> (Fonte: MDN Web Docs -
+            Mozilla)<br>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+                target="_blank">Ler sobre Criação de Links</a>
+        </li>
+
+
+    </ul>
+
+
+    <hr>
+
+</html>
+
+git init
